@@ -60,7 +60,11 @@ html{
 ::after,
 ::before{
   box-sizing: inherit;
+}
 
+*:focus{
+  outline: #111517 2px solid;
+  outline-offset: 2px;
 }
 body{
   display: flex;
@@ -69,7 +73,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: "Nunito Sans", "Arial", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
   font-size: 14px;
   line-height: 16px;
@@ -92,6 +96,56 @@ a {
 }
 
 
+/* SITE-HEADER */
+.site-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: var(--element-bgc);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+
+}
+
+.site-header-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-header-heading {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.site-header-heading:hover{
+  opacity: 0.8;
+}
+
+.site-header-heading:active{
+  opacity: 0.6;
+}
+
+.dark-mode-button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.dark-mode-button-inner {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+}
+.dark-mode-button-icon {
+  margin-right: 8px;
+}
+.dark-mode-button-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
 
 
 /* MAIN CONTENT */
