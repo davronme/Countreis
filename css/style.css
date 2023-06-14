@@ -79,6 +79,8 @@ body{
   line-height: 16px;
   background-color: var(--body-gbc);
   color: var(--text-color);
+  transition: background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 a {
@@ -150,5 +152,123 @@ a {
 
 /* MAIN CONTENT */
 .main-content{
+  padding-top: 48px;
+  padding-bottom: 48px;
   flex-grow: 1;
+}
+
+/* FILTERS */
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.filters-search-input {
+  width: 100%;
+  max-width: 480px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 24px;
+  border: 0;
+  border-radius: 5px;
+  background: var(--element-bgc);
+  color: var(--text-color);
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.06);
+}
+.filters-region-select {
+  /* appearance: none; */
+  padding: 18px 24px;
+  min-width: 300px;
+  border: 0;
+  border-radius: 5px;
+  background: var(--element-bgc);
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.06);
+  color: var(--text-color);
+}
+/*
+.arrow{
+  position: relative;
+}
+
+.arrow::before{
+  content: "";
+  position: absolute;
+  top: 40%;
+  right: 15px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 7.5px 0 7.5px;
+  border-color: #000000 transparent transparent transparent;
+  line-height: 0px;
+  _border-color: #000000 #ffffff #ffffff #ffffff;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#ffffff');
+} */
+
+
+/* INDEX-COUNTRIES */
+
+
+.index-countries-list{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: -75px;
+  margin-bottom: -75px;
+}
+.-index-countries-item {
+  width: calc(25 - 75px);
+  margin-left: 74px;
+  margin-bottom: 75px;
+  background-color: var(--element-bgc);
+  color: var(--text-color);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
+}
+.index-country-flag {
+  width: 264px;
+  height: 160px;
+  object-fit: cover;
+  /* border-radius: 5px 5px 0 0; */
+}
+.index-countries-info {
+  padding: 0;
+  margin: 0;
+  padding: 24px 24px 48px;
+}
+.index-country-name {
+  margin: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 16px;
+  color: var(--text-color);
+}
+
+.index-countries-name-link{
+  color: var(--text-color);
+}
+.index-countries-details {
+  margin: 0;
+}
+.index-country-details-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.index-country-details-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.index-countries-details-title{
+  margin: 0;
+  margin-right: 4px;
+}
+.index-countries-details-value{
+  margin: 0;
 }
